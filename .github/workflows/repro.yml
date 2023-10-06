@@ -4,6 +4,9 @@ jobs:
   repro:
     runs-on: windows-latest
     steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
       - run: echo "print('Hello world!')" > index.py
       - uses: github/codeql-action/init@v2
         with:
