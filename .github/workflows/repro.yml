@@ -12,3 +12,5 @@ jobs:
         with:
           languages: python
       - uses: github/codeql-action/analyze@v2
+        env: 
+          PY_PYTHON3: 3.11
