@@ -8,9 +8,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: echo "print('Hello world!')" > index.py
-      - uses: github/codeql-action/init@aeisenberg/python-3-12-fix
+      - uses: github/codeql-action/init@aeisenberg/other-try
         with:
           languages: python
       - run: env
         shell: bash
-      - uses: github/codeql-action/analyze@aeisenberg/python-3-12-fix
+      - uses: github/codeql-action/analyze@aeisenberg/other-try
