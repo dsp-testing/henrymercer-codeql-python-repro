@@ -8,7 +8,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: echo "print('Hello world!')" > index.py
-      - uses: github/codeql-action/init@v2
+      - uses: github/codeql-action/init@aeisenberg/python-3-12-fix
         with:
           languages: python
-      - uses: github/codeql-action/analyze@v2
+      - uses: github/codeql-action/analyze@aeisenberg/python-3-12-fix
