@@ -13,4 +13,7 @@ jobs:
           languages: python
       - run: env
         shell: bash
+      - run: |
+          py -3 -c "import sys;print(sys.path)"
+          py -3 -c "import imp"
       - uses: github/codeql-action/analyze@aeisenberg/python-3-12-fix
