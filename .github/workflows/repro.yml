@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+  repro:
+    runs-on: windows-latest
+    steps:
+      - run: echo "print('Hello world!')" > index.py
+      - uses: github/codeql-action/init@v2
+        with:
+          languages: python
+      - uses: github/codeql-action/analyze@v2
